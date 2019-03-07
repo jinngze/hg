@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/zxing"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="【-】扫一扫"
+            android:textSize="15sp"
+            />
+        <EditText
+            android:id="@+id/putin"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sss"
+            />
+
+        <ImageView
+            android:id="@+id/sousuo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/sousuo"
+            />
+        <ImageView
+            android:id="@+id/qiehuan"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/qiehuan"
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/hand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="综合排序"
+        android:gravity="center"
+        android:layout_below="@+id/hand"
+        android:layout_marginTop="10dp"
+        android:background="#fff000"
+        />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text2"
+                android:layout_marginTop="10dp"></android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

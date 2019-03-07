@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <com.recker.flybanner.FlyBanner
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/fly"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        ></com.recker.flybanner.FlyBanner>
+
+    
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="热销新品"
+          android:textSize="25dp"
+          android:layout_below="@id/fly"
+           android:layout_marginTop="5dp"
+          />
+    
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recycler"
+                 android:layout_below="@id/fly"
+                android:layout_marginTop="50dp"
+                ></android.support.v7.widget.RecyclerView>
+
+
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/button1"
+          android:text="点击"
+          android:layout_alignParentBottom="true"
+          android:layout_marginLeft="100dp"
+          />
+
+
+</RelativeLayout>
